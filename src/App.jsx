@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Leva } from 'leva'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Scene from './components/Scene'
 import useStore from './stores/store'
 
@@ -33,6 +35,13 @@ const App = () => {
             >
                 <Scene />
             </Canvas>
+
+            <p className="credits">
+                Credits: <a href="https://pouria.dev/unknown-pleasures" target="_blank">Original site</a>
+            </p>
+
+            <Analytics />
+            <SpeedInsights />
         </>
     )
 }
