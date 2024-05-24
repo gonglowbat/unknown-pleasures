@@ -41,7 +41,7 @@ const App = () => {
             </p>
 
             <Analytics />
-            <SpeedInsights />
+            {/* <SpeedInsights /> */}
         </>
     )
 }
